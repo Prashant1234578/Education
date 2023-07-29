@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iEducate-Transforming education online</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .logo {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .logo img {
+            width: 55%;
+            border: 3px solid white;
+            border-radius: 50px;
+        }
+        
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+        }
+        
+        .nav-list {
+            width: 70%;
+            /* background-color: black; */
+            display: flex;
+            align-items: center;
+        }
+        
+        .nav-list li {
+            list-style: none;
+            padding: 26px 30px;
+        }
+        
+        .nav-list li a {
+            text-decoration: none;
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        .nav-list li a :hover {
+            color: black;
+        }
+        
+        .rightNav {
+            /* background-color: blueviolet; */
+            width: 30%;
+            text-align: right;
+            padding: 0 23px;
+        }
+        
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+        }
+        
+        .background {
+            background: grey;
+            background-size: cover;
+            background-blend-mode: darken;
+        }
+        
+        .box-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 50%;
+            margin: auto;
+            height: 80%;
+        }
+        
+        .firstSection {
+            height: 100vh;
+        }
+        
+        .firsthalf {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .secondhalf {
+            width: 30%;
+        }
+        
+        .secondhalf img {
+            width: 70%;
+            border: 4px solid white;
+            border-radius: 120px;
+            display: block;
+            margin: auto;
+        }
+        
+        .text-big {
+            font-size: 41px;
+        }
+        
+        .text-small {
+            font-size: 18px;
+        }
+        
+        .btn {
+            padding: 8px 20px;
+            margin: 7px 3px;
+            border: 2px solid white;
+            border-radius: 8px;
+            background: none;
+            color: white;
+            cursor: pointer;
+        }
+        
+        .btn-sm {
+            padding: 3px 10px;
+            vertical-align: middle;
+        }
+        
+        .section {
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            max-width: 80%;
+            margin: auto;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        .section-left {
+            flex-direction: row-reverse;
+        }
+        
+        .paras {
+            padding: 0p 65px;
+        }
+        
+        .sectionTag {
+            padding: 16px 0;
+        }
+        
+        .thumbnail img {
+            width: 250px;
+            border: 2px solid red;
+            border-radius: 26px;
+            margin-top: 19px;
+        }
+        
+        .contact {
+            background-color: antiquewhite;
+            height: 150vh;
+        }
+        
+        .text-centre {
+            text-align: center;
+            padding: 30px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        .form {
+            max-width: 100px;
+            margin: 25px auto;
+        }
+        
+        .form-input {
+            margin: 14px 0;
+            padding: 5px 3px;
+            width: 300px;
+            justify-content: centre;
+            font-size: 19px;
+            border: 2px solid grey;
+            border-radius: 6px;
+        }
+        
+        .btn-dark {
+            color: black;
+            border: 2px solid rgb(124, 121, 121);
+        }
+        
+        .text-footer {
+            text-align: center;
+            padding: 30px;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+        }
+        
+        .burger {
+            width: 33px;
+            background-color: white;
+            height: 4px;
+            margin: 3px 3px;
+        }
+        
+        @media only screen and (max-width:640px) {
+            .nav-list {
+                flex-direction: column;
+            }
+            .navbar {
+                flex-direction: column;
+            }
+            .rightNav {
+                text-align: centre;
+            }
+            #search {
+                width: 100%
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo"><img src="https://th.bing.com/th/id/OIP.10DhU8Td1gtxy_LAeDAkrgHaEo?pid=ImgDet&w=474&h=296&rs=1" alt="logo"></div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#contact us">contact us</a></li>
+        </ul>
+
+        <div class="rightNav">
+        </div>
+
+        <input type="text" name="search" id="search">
+        <button class="btn btn-sm">search</button>
+
+    </nav>
+    <section class="background firstSection">
+        <div class="box-main">
+
+            <div class="firsthalf">
+                <p class="text-big">The future of education is here</p>
+                <p class="text-small">in this world of 7 billion people we need to educate all of them .this is the future of an education the future id here</p>
+                <div class="button">
+                    <button class="btn">subscribe</button>
+                    <button class="btn">watch video</button>
+                </div>
+
+            </div>
+
+            <div class=" secondhalf ">
+                <img src="https://th.bing.com/th/id/OIP.10DhU8Td1gtxy_LAeDAkrgHaEo?pid=ImgDet&w=474&h=296&rs=1" alt="laptop image">
+            </div>
+
+
+    </section>
+    <section class="section">
+        <div class="paras">
+            <p class="sectionTag text-big">Importance of online study</p>
+            <p class="sectionsubTag text-small">Today there is such an easy way to get an education that we do not need to go anywhere to get an education. To take education, we can get education from the teacher just sitting at home from the online mood. In today’s time, facilities like
+                the internet are available in all the homes. Online education is proving to be very effective in the time of Corona. Nowadays online education is becoming very prevalent everywhere whether it is village or city.
+
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://th.bing.com/th/id/R.bc3550ab1c6e4d134c042968dd9ba80c?rik=9YMC%2f98QuwxpQQ&riu=http%3a%2f%2fcanada1.national.edu%2fwp-content%2fuploads%2f2018%2f07%2fiStock-639710652-1080x675.jpg&ehk=vSa5dN4YxH1KeYozTcE48xc9nfBfVUdKT1hJINHOE5k%3d&risl=&pid=ImgRaw&r=0"
+                alt="laptop image " class="imageFluid ">v
+        </div>
+    </section>
+    <section class=" section section-left ">
+        <div class="paras ">
+            <p class="sectionTag text-big ">Importance of social media</p>
+            <p class="sectionsubTag text-small "> emergence of social media, it’s become easier than ever to catch up on the events happening, not just around your country, but all over the globe. People in Egypt are up to date with everything going on in the U.S presidential elections, and
+                everyone in South Korea is aware of the breathtaking nature found in southern Africa. Individuals all over the globe share their travel experiences, reviews of their favorite restaurants and bars, and the can’t-miss touristic sites anywhere,
+                at any time. And just because your relative or friend traveled, that doesn’t mean, that’s the end of your relationship. You still have daily chats with them in high-quality video calls, so you don’t miss a single thing going on in their
+                lives. Social media has definitely made the whole world a smaller and warm city.
+            </p>
+        </div>
+        <div class="thumbnail ">
+            <img src="https://4.bp.blogspot.com/-IU6Ff0IB3HE/W234fEAFgxI/AAAAAAAAAZc/X-4m4H1LmzwR3KUdTu9t1u0ZDUnX1V8FgCLcBGAs/s1600/DiHYoQ_UwAAfLcF.jpg " alt="laptop image " class="imageFluid ">
+        </div>
+    </section>
+    <section class="section ">
+        <div class="paras ">
+            <p class="sectionTag text-big ">Importance of internet</p>
+            <p class="sectionsubTag text-small ">The world without the internet is unimaginable. That’s why the importance of the internet should be discussed. Our daily life tasks, communication, and enjoyment depend chiefly on the internet. As per its definition, the internet connects
+                users with different types of mobile phones and computer systems. The sharing and exchanging of ideas, information, and news all need an internet connection. The internet connects computers and businesses, people, government schemes, lives,
+                and stories worldwide.
+
+            </p>
+        </div>
+        <div class="thumbnail ">
+            <img src="https://4.bp.blogspot.com/-IU6Ff0IB3HE/W234fEAFgxI/AAAAAAAAAZc/X-4m4H1LmzwR3KUdTu9t1u0ZDUnX1V8FgCLcBGAs/s1600/DiHYoQ_UwAAfLcF.jpg " alt="laptop image " class="imageFluid ">
+        </div>
+    </section>
+    <section class="contact">
+        <h2 class="text-centre">Contact Us</h2>
+
+        <div class="form">
+            <input class="form-input" type=" text " name="name " id="name " placeholder="Enter your name ">
+            <input class="form-input" type="text " name="phone " id="phone " placeholder="Enter your phone ">
+            <input class="form-input" type="text " name="email " id="email " placeholder="Enter your email ">
+            <textarea class="form-input" name="text " id="text " cols="30 " rows="10 " placeholder="Ellaborate your concern"></textarea>
+            <button class=" btn btn-sm btn-dark ">Submit</button>
+        </div>
+    </section>
+    <footer class="background">
+        <p class="text-centre"> copyright &copy;2027 - All right reserved </p>
+    </footer>
+</body>
+
+
+
+</html>
